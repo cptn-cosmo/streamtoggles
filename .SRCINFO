@@ -2,7 +2,7 @@ pkgbase = streamtoggles
 	pkgdesc = Macro pad and toggle controller for Linux desktop streaming setups
 	pkgver = 1.0.0
 	pkgrel = 1
-	url = https://github.com/streamtoggles/streamtoggles
+	url = https://github.com/cptn-cosmo/streamtoggles
 	arch = any
 	license = MIT
 	checkdepends = python
@@ -17,5 +17,7 @@ pkgbase = streamtoggles
 	optdepends = xdg-desktop-portal: Global shortcuts support across Wayland, KDE Plasma, and GNOME
 	optdepends = xdg-desktop-portal-kde: KDE Plasma desktop portal implementation
 	optdepends = xdg-desktop-portal-wlr: wlroots/sway desktop portal implementation
+	source = streamtoggles-1.0.0.tar.gz::https://github.com/cptn-cosmo/streamtoggles/archive/refs/tags/v1.0.0.tar.gz
+	sha256sums = 1a932775d4c2135bd5287ff055b626fd26b0d22f46b37feb98c49001a3cd5446
 
 pkgname = streamtoggles
