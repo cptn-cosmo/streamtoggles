@@ -1,4 +1,4 @@
-# Maintainer: Cosmo <cosmo@example.com>
+# Maintainer: cptn-cosmo <cptncosmo@gmail.com>
 pkgname=streamtoggles
 pkgver=1.0.0
 pkgrel=1
