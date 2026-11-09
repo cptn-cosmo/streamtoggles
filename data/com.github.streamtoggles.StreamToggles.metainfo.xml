@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.github.streamtoggles.StreamToggles</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <name>StreamToggles</name>
+  <summary>Macro pad and toggle controller for Linux desktop streaming setups</summary>
+  <description>
+    <p>
+      StreamToggles is a customizable virtual macro pad and toggle controller designed
+      for Linux streaming and desktop automation workflows (e.g. controlling veadotube mini,
+      OBS Studio, PipeWire audio, or local scripts).
+    </p>
+    <p>Features include:</p>
+    <ul>
+      <li>Pure Qt 6 and PyQt6 interface strictly adhering to modern KDE Plasma HIG</li>
+      <li>Visual canvas sections for grouping controls into distinct visual grids</li>
+      <li>Single, double, toggle, and command action types</li>
+      <li>Mutually exclusive button groups (radio button behavior)</li>
+      <li>Global keyboard shortcuts across Wayland, KDE Plasma, and Linux desktops via XDG Desktop Portal</li>
+      <li>Non-blocking background execution for HTTP requests and shell scripts</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">com.github.streamtoggles.StreamToggles.desktop</launchable>
+  <url type="homepage">https://github.com/cptn-cosmo/streamtoggles</url>
+  <url type="bugtracker">https://github.com/cptn-cosmo/streamtoggles/issues</url>
+  <developer id="com.github.streamtoggles">
+    <name>StreamToggles Contributors</name>
+  </developer>
+  <provides>
+    <binary>streamtoggles</binary>
+  </provides>
+  <releases>
+    <release version="1.0.0" date="2026-09-27">
+      <description>
+        <p>Converted to Qt 6 and modern KDE Plasma application architecture.</p>
+      </description>
+    </release>
+  </releases>
+  <content_rating type="oars-1.1"/>
+</component>

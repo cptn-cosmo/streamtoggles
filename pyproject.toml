@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "streamtoggles"
+version = "1.0.0"
+description = "A customizable macro pad and toggle controller for Linux desktop streaming setups"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "StreamToggles Contributors" }]
+keywords = ["streamdeck", "macro", "obs", "veadotube", "qt6", "pyqt6", "kde", "plasma"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: X11 Applications :: Qt",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "PyQt6>=6.5.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/cptn-cosmo/streamtoggles"
+Issues = "https://github.com/cptn-cosmo/streamtoggles/issues"
+
+[project.scripts]
+streamtoggles = "streamtoggles.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["streamtoggles*"]
+
+[tool.setuptools.package-data]
+streamtoggles = ["py.typed"]

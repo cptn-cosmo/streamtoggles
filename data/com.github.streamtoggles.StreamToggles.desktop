@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=StreamToggles
+GenericName=Stream Deck and Macro Toggle Controller
+Comment=Macro pad and toggle controller for Linux desktop streaming setups
+Exec=streamtoggles
+Icon=com.github.streamtoggles.StreamToggles
+Terminal=false
+Type=Application
+Categories=Qt;KDE;AudioVideo;AudioVideoEditing;
+Keywords=stream;deck;macro;toggle;veadotube;obs;audio;hotkey;qt;kde;plasma;
+StartupNotify=true
+StartupWMClass=com.github.streamtoggles.StreamToggles
