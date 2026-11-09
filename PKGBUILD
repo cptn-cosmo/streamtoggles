@@ -13,6 +13,7 @@ depends=(
   'qt6-svg'
 )
 makedepends=(
+  'git'
   'python-build'
   'python-installer'
   'python-setuptools'
@@ -27,21 +28,21 @@ checkdepends=(
   'python'
 )
 
-source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
-sha256sums=('1a932775d4c2135bd5287ff055b626fd26b0d22f46b37feb98c49001a3cd5446')
+source=("$pkgname::git+$url.git#tag=v$pkgver")
+sha256sums=('SKIP')
 
 build() {
-  cd "$srcdir/$pkgname-$pkgver"
+  cd "$srcdir/$pkgname"
   python -m build --wheel --no-isolation
 }
 
 check() {
-  cd "$srcdir/$pkgname-$pkgver"
+  cd "$srcdir/$pkgname"
   QT_QPA_PLATFORM=offscreen python -m unittest discover -s tests -v
 }
 
 package() {
-  cd "$srcdir/$pkgname-$pkgver"
+  cd "$srcdir/$pkgname"
 
   # Install Python package and executable wrapper into /usr/bin
   python -m installer --destdir="$pkgdir" dist/*.whl
